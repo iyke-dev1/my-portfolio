@@ -6,12 +6,13 @@ export default function Portfolio() {
   return (
     <div className="container">
       <header className="header">
-        <img
-          src="/profile.jpg"
-          alt="Iyke Eze"
-          width={200}
-          height={200}
-        />
+      <img
+  src={`${import.meta.env.BASE_URL}profile.jpg`}
+  alt="Iyke Eze"
+  width={200}
+  height={200}
+/>
+
         <h1>Iyke Eze</h1>
         <p>Flutter Developer</p>
         <div className="social-icons">
@@ -79,8 +80,8 @@ export default function Portfolio() {
       <section>
         <h2>Resume</h2>
         <p>You can download my resume below:</p>
-        <a href="/Cletus_Eze_Resume.pdf" download>
-          <button>Download Resume (PDF)</button>
+        <a href={`${import.meta.env.BASE_URL}Cletus_Eze_Resume.pdf`} download>
+        <button>Download Resume (PDF)</button>
         </a>
       </section>
     </div>
